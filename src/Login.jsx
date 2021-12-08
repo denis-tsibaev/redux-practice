@@ -25,6 +25,7 @@ export const Login = () => {
             <label>
                 Login
                 <input
+                    autoComplete="off"
                     type="text"
                     name="login"
                     value={authData.login}
@@ -34,6 +35,7 @@ export const Login = () => {
             <label>
                 Password
                 <input
+                    autoComplete="off"
                     type="password"
                     name="password"
                     value={authData.password}
