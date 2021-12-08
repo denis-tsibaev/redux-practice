@@ -1,0 +1,8 @@
+.user {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: #fff;
+    background-color: teal;
+    padding: 20px 10px;
+}

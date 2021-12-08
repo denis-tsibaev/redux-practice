@@ -1,5 +1,5 @@
 import shortid from 'shortid';
-import { ADD_TASK, DELETE_TASK, LOGIN } from './actionTypes';
+import { ADD_TASK, DELETE_TASK, LOGIN, LOGOUT } from './actionTypes';
 
 export const addTask = titleText => {
     const task = { title: titleText, id: shortid.generate(), isDone: false };
@@ -20,4 +20,9 @@ export const deleteTask = id => {
 export const login = payload => ({
     type: LOGIN,
     payload,
+});
+
+export const logout = () => ({
+    type: LOGOUT,
+    payload: null,
 });

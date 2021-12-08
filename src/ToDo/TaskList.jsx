@@ -7,14 +7,14 @@ export const TaskList = () => {
 
     return (
         <div>
-            <ul>
+            <ol>
                 {tasks?.map(({ title, id }) => (
                     <li key={id}>
                         {title}
                         <BtnDelete id={id} />
                     </li>
                 ))}
-            </ul>
+            </ol>
         </div>
     );
 };
